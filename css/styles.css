@@ -1,0 +1,93 @@
+/*Background color to create some space for larger viewports. Change the color eventually*/
+body {
+   background-color: slategrey;
+}
+
+/*Center the main content, create max and min widths to scale window for different devices.*/
+#wrapper {
+    width: 95%;
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #56cfe1;    
+    padding: 0;
+}
+
+/*Hero area. Eventually make it to display like the header in a resume*/
+header {
+    width: 100%;
+    float: left;
+    font-family: Georgia, Arial;
+    text-align: center;
+    background-color: #56cfe1;
+}
+
+/*Horizontal navigation bar. Eventually would like to seemlessly scroll through the pages without having to click links for the user*/
+nav {
+    width: 100%;
+    background-color: black ;
+    display: inline-block;
+}
+
+/*Figure out font and background color with new pallete*/
+main {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    background-color: #56cfe1;
+}
+
+/*Include github link and linkdin icons and hyperlinks eventually*/
+footer {
+    width: 100%;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #48bfe3;
+}
+
+/*Style profile picture*/
+#profile {
+    width: 20%;
+    float: left;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+p {
+    text-indent: 30px;
+}
+
+/*Take out bullet points*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Display inline to take up less space*/
+li {
+    display: inline-block;
+    padding: 12px;
+    font-size: 25px;
+    width: 10%;
+    text-align: center;
+}
+
+/*Take out underline*/
+ul a {
+    text-decoration: none;
+    color: #56cfe1;
+    margin: 0;
+    padding: 0;
+}
+
+/*Provide user feedback for hyperlinks*/
+li a:hover {
+    color: purple;
+    transition: 1s;
+}
