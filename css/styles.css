@@ -24,6 +24,11 @@ header {
     background-color: #56cfe1;
 }
 
+/*Increase the size of the text within the welcome message*/
+#welcome {
+    font-size: 20px;
+}
+
 /*Horizontal navigation bar. Eventually would like to seemlessly scroll through the pages without having to click links for the user*/
 nav {
     width: 100%;
