@@ -20,3 +20,20 @@ const welcome = document.querySelector('#welcome');
     {
         welcome.textContent = 'Good Evening'
     }
+
+// Add secret message in local storage
+const key = `It's a secret to everybody.`
+const span = document.querySelector('span')
+const userInput = document.querySelector('#input')
+const button = document.querySelector('button')
+
+button.addEventListener('click', () => {
+    const input = userInput.value
+    localStorage.setItem(key, userInput.value)
+    if (key == userInput.value)
+    {
+        span.textContent = `"You need a couple more heart containers before facing Gannon"`
+        
+    }
+
+})
