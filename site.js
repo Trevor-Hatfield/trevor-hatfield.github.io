@@ -21,8 +21,8 @@ const welcome = document.querySelector('#welcome');
         welcome.textContent = 'Good Evening'
     }
 
-
-localStorage.setItem(`It's a secret to everybody.`, `You need a couple more heart containers before facing Gannon`)
+// comment out local storage assignment from before
+//localStorage.setItem(`It's a secret to everybody.`, `You need a couple more heart containers before facing Gannon`)
 
 // Carousel Assignment
 
@@ -68,3 +68,6 @@ setInterval(cycleImages = () => {
     currentImage++
     showImages(currentImage)
 }, 5000)
+
+
+

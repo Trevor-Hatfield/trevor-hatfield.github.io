@@ -75,7 +75,7 @@ ul {
 }
 
 /*Display inline to take up less space*/
-li {
+nav li {
     display: inline-block;
     padding: 12px;
     font-size: 25px;
@@ -121,3 +121,47 @@ li a:hover {
     margin-top: 10px;
 }
 
+#new-todo {
+    width: 40%;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    clear: both;
+}
+
+#todo-button {
+    width: 20%;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    clear: both;
+}
+
+.todo-list {
+    width: 95%;
+    float: right;
+}
+
+.todo-list>li {
+    text-align: left;
+    font-size: 25px;
+    border-bottom: solid black 2px;
+    padding: 5px;
+}
+
+.todo-chkbx {
+    width: 5%;
+    float: left;
+}
+
+.todo-chkbx li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid black 2px;
+    padding: 5px;
+}
+
+.todo-chkbx li input {
+    margin: 7.5px;
+}
