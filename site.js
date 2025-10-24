@@ -69,5 +69,36 @@ setInterval(cycleImages = () => {
     showImages(currentImage)
 }, 5000)
 
+// Pokemon API assignment
+
+renderPokemon()
+
+// Create function that creates a pokemon object
+async function getRandomPokemon(){
+    try{      
+        const urlPoke = 'https://pokeapi.co/api/v2/pokemon/' + Math.floor(Math.random() * 150)
+        // response variable that waits to fetch the pokemon from the api
+        const response = await fetch(urlPoke)
+        // convert to JSON
+        const pokeJson = await response.json()
+        // return pokemon variable to use for rendering sprite
+        return pokemon = pokeJson
+
+    } catch(error){
+        console.log(error)
+    }
+}
+
+// render the pokemon object and add to div element
+async function renderPokemon() {
+    // wait for the pokemon object to the fully loaded
+    await getRandomPokemon()
+    const pokeDiv = document.querySelector('#pokemonSprite')
+    // append an image to div using the sprites front default attribute 
+    const img = document.createElement('img')
+    img.src = pokemon.sprites.front_default
+    img.alt = pokemon.name
+    pokeDiv.append(img)
+}
 
 
